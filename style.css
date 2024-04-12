@@ -1,0 +1,45 @@
+body{
+    display: flex;
+    flex-direction: column;
+    margin: auto auto;
+    width: 60%;
+    flex: 1;
+    font-family: sans-serif;
+    font-size: 15px;
+}
+header{
+    height: 100px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+#main{
+
+}
+#footer{
+    margin-top: 50px;
+    text-align: right;
+}
+#table{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+}
+#rowTable{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+#headerTable{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(100, 255, 100);
+}
+#itemTable{
+    height: 30px;
+    width: 25%;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    align-items: center;
+}
