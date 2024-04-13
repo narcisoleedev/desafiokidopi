@@ -21,9 +21,7 @@ Após ter instalado, dentro do MariaDB crie um usuário **test** (com privilégi
 
 Lembre-se também de habilitar o módulo mysqli para que a conexão com o banco funcione.
 
-Agora, logando dentro do banco:
-
-Pela linha de comando:
+Agora, logando dentro do banco, pela linha de comando:
 
 ```sudo mysql -u test -p```
 
@@ -35,10 +33,18 @@ Após isso, está tudo pronto para rodarmos a aplicação!
 
 Clone o repositório na sua máquina.
 
-Dentro da pasta do projeto, entre na pasta **api**, abra o cmd/bash e rode o seguinte comando para inicializar o back-end:
+```https://github.com/narcisoleedev/desafiokidopi.git```
+
+Dentro da pasta do projeto, entre na pasta **api**
+
+```cd api```
+
+Abra o cmd ou bash e rode o seguinte comando para inicializar o back-end:
 
 ```php -S localhost:8000```
 
 Isso irá habilitar o back-end no endereço acima, deixe rodando enquanto utiliza a interface.
+
+A interface funciona sem o back-end mas para registrar os logs no banco de dados é necessário fazer o passo a passo acima.
 
 Para abrir a interface basta abrir o arquivo index.html no seu navegador e utilizar a vontade :).
