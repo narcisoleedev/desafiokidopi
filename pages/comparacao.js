@@ -7,14 +7,11 @@ const populateSelect = (data) =>{
     let table = '<option></option>';
     for (const key in data) {
         const item = data[key];
-        console.log(key);
         table += `<option value="${item}">${item}</option>`;
     }
-    console.log(table);
     select1.innerHTML = table;
     select1.addEventListener('change', (event)=>{
         country1 = event.target.value;
-        console.log(country1);
         checkSelect();
     })
     select2.addEventListener('change', (event)=>{

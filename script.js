@@ -3,7 +3,6 @@ const showData = (data, country) =>{
     let table = '';
     for (const key in data) {
         const item = data[key];
-        console.log(key);
         table += `<div id=rowTable>
                   <div id="itemTable">${item['ProvinciaEstado']}</div>
                   <div id="itemTable">${item['Pais']}</div>
@@ -40,7 +39,6 @@ const fetchApi = (country) => {
     {method: "GET"})
     .then(response=>response.json())
     .then(data=>{
-        console.log(data);
         showData(data, country);
         callApi(data, country);
     }).catch(e=>console.log(e));
@@ -49,7 +47,6 @@ const fetchApi = (country) => {
 document.addEventListener('DOMContentLoaded', ()=>{
     const countries = document.getElementById('select-countries');
     countries.addEventListener('change', (event)=>{
-        console.log('selected');
         const country = event.target.value;
         fetchApi(country);
     });
